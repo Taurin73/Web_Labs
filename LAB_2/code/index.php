@@ -69,3 +69,5 @@ echo round($root, 2), "\n";
 $root = sqrt(587);
 $rootArray = array('floor' => floor($root), 'ceil' => ceil($root));
 print_r($rootArray);
+
+echo "\n";
