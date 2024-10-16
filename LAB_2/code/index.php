@@ -28,3 +28,8 @@ $numLanguages = 4;
 $months = 11;
 $days = $months * 16;
 $daysPerLanguage = $days/$numLanguages;
+
+echo "Meg spent ", $daysPerLanguage, "d to learn ", $numLanguages, " languages\n";
+
+// Task 4 (12?)
+echo "pow(8,2)=", 8**2, "\n";
