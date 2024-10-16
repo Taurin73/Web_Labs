@@ -104,3 +104,4 @@ for($i = 0; $i <= sizeof($array); $i++) {
     $sum += $array[$i];
     $k += 1;
     if($sum > 10){
+        echo "Amount of first elements is $k\n";
