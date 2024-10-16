@@ -5,3 +5,5 @@
 
 // Write your code here:
 // Task 1
+$order = &$very_bad_unclear_name;
+$order .= ", two number 9s, a number 9 large, a number 6 extra dip and a number 7";
