@@ -60,3 +60,12 @@ $arr = array(4, 2, 5, 19, 13, 0, 10);
 $sum = 0;
 foreach($arr as $element) $sum += pow($element, 2);
 echo "The array power result is $sum\n";
+
+$root = sqrt(379);
+echo round($root), "\n";
+echo round($root, 1), "\n";
+echo round($root, 2), "\n";
+
+$root = sqrt(587);
+$rootArray = array('floor' => floor($root), 'ceil' => ceil($root));
+print_r($rootArray);
