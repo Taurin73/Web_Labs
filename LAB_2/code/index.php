@@ -71,3 +71,7 @@ $rootArray = array('floor' => floor($root), 'ceil' => ceil($root));
 print_r($rootArray);
 
 echo "\n";
+
+$numbersArray = array(4, -2, 5, 19, -130, 0, 10);
+echo "Min is ", min($numbersArray), "\n";
+echo "Max is ", max($numbersArray), "\n";
