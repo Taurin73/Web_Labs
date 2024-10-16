@@ -22,3 +22,9 @@ echo "\n";
 $lastMonth = 1187.23;
 $thisMonth = 1089.98;
 echo "The difference between my spendings in this month and previous one is ", $lastMonth - $thisMonth, "\n";
+
+// Task 3 (11?)
+$numLanguages = 4;
+$months = 11;
+$days = $months * 16;
+$daysPerLanguage = $days/$numLanguages;
