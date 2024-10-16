@@ -43,3 +43,12 @@ $answer -= 2;
 $answer /= 2;
 $answer -= $myNum;
 echo "The answer is ", $answer, "\n";
+
+// Task 6 (14?)
+$a = 10;
+$b = 3;
+echo "a % b = ", $a % $b, "\n";
+if($b == 0) echo "Нельзя делить на 0\n";
+else if($a % $b == 0) {
+    echo "Делится\n";
+} else echo "Делится с остатком ", $a % $b, "\n";
