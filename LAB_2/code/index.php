@@ -89,3 +89,18 @@ $absArray = array(1, 2, -1, -2, 3, -3);
 for($i = 0; $i < sizeof($absArray); $i++) $absArray[$i] = abs($absArray[$i]);
 print_r($absArray);
 echo "\n";
+
+$number = 30;
+$array = [];
+for($i = 1; $i <= $number; $i++) {
+    if($number % $i === 0) $array[] = $i;
+}
+print_r($array);
+echo "\n";
+$array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+$sum = 0;
+$k = 0;
+for($i = 0; $i <= sizeof($array); $i++) {
+    $sum += $array[$i];
+    $k += 1;
+    if($sum > 10){
