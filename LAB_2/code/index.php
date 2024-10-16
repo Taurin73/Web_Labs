@@ -18,3 +18,7 @@ echo "Tax: 3.5%\n"; // No need to use echo for \n
 
 echo 5+6+1;
 echo "\n";
+
+$lastMonth = 1187.23;
+$thisMonth = 1089.98;
+echo "The difference between my spendings in this month and previous one is ", $lastMonth - $thisMonth, "\n";
