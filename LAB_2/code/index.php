@@ -75,3 +75,9 @@ echo "\n";
 $numbersArray = array(4, -2, 5, 19, -130, 0, 10);
 echo "Min is ", min($numbersArray), "\n";
 echo "Max is ", max($numbersArray), "\n";
+
+
+echo rand(1, 100), "\n";
+$randomArray = [];
+for($i = 0; $i < 10; $i++) $randomArray[$i] = rand();
+print_r($randomArray);
