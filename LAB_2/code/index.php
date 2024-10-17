@@ -117,3 +117,33 @@ function printStringReturnNumber() {
 }
 $my_num = printStringReturnNumber();
 echo $my_num;
+
+echo "\n";
+
+// Task 8 (16?)
+function increaseEnthusiasm(string $string){
+    return $string."!";
+}
+echo increaseEnthusiasm("Hi"), "\n";
+
+function repeatThreeTimes(string $string) {
+    return $string.$string.$string;
+}
+echo repeatThreeTimes("WEB"), "\n";
+echo increaseEnthusiasm(repeatThreeTimes("Hello")), "\n";
+
+function cut(string $string, int $l = 10){
+    return substr($string,0, $l);
+}
+$cut = cut("Cut me please");
+echo $cut, "\n";
+
+$array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+function printArray($array, $i = 0){
+    if($i<sizeof($array)){
+        echo $array[$i], "\n";
+        printArray($array, $i + 1);
+    }
+}
+printArray($array);
+echo "\n";
