@@ -253,3 +253,5 @@ else {
         echo "Sum has two digits: $sum\n";
     }
 }
+
+$arr = [32, 321, 453];
