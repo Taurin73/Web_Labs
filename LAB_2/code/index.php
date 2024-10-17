@@ -269,3 +269,28 @@ for($i = 1; $i <= $pyramidSize; $i++) {
     for($j = 1; $j <= $i; $j++) echo 'x';
     echo "\n";
 }
+
+// Task 12 (20?)
+$numbers = [4, 5, 6, 7, 7, 8, 8];
+$average = array_sum($numbers) / sizeof($numbers);
+echo $average, "\n";
+
+$end = 100;
+$sum = ($end * ($end + 1)) / 2; // Using formula
+echo "The sum from 1 to $end is $sum\n";
+
+$sqrtNumbers = array_map("sqrt", $numbers);
+print_r($sqrtNumbers);
+echo "\n";
+
+$numbers = range(1, 26);
+$letters = range('a', 'z');
+$result = array_combine($letters, $numbers);
+print_r($result);
+echo "\n";
+
+$string = '1234567890';
+$pairs = str_split($string, 2);
+$arr = array_map("intval",$pairs);
+$sum = array_sum($arr);
+echo "The sum is $sum\n";
