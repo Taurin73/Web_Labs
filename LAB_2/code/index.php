@@ -157,7 +157,69 @@ function sumDigits($number) {
     if($sum > 9) {
         return sumDigits($sum);
     }
+ 
     return $sum;
 }
 $number = 5234899;
 echo "Number digits sum is ", sumDigits($number), "\n";
+
+// Task 9 (17?)
+function createArrayOfXs(int $l){
+    $array = [];
+    for ($i = 1; $i <= $l; $i++) $array[$i] = str_repeat("x",$i);
+    return $array;
+}
+print_r(createArrayOfXs(4));
+echo "\n";
+
+function arrayFill($element, int $l){
+    $array = [];
+    for($i = 0; $i <= $l; $i++) {
+        $array[$i] = $element;
+    }
+    return $array;
+}
+print_r(arrayFill("x", 5));
+echo "\n";
+
+function sumArray2D($array) {
+    $sum = 0;
+    foreach($array as $innerArray) {
+        foreach($innerArray as $value) {
+            $sum += $value;
+        }
+    }
+    return $sum;
+}
+$array = [[1, 2, 3], [4, 5], [6]];
+echo sumArray2D($array), "\n";
+
+$number = 1;
+$array2D = [];
+for ($i = 0; $i < 3; $i++) {
+    $innerArray = [];
+    for($j = 0; $j < 3; $j++) {
+        $innerArray[] = $number;
+        $number++;
+    }
+    $array2D[] = $innerArray;
+}
+print_r($array2D);
+
+$array = [2, 5, 3, 9];
+$result = $array[0] * $array[1] + $array[2] * $array[3];
+echo $result, "\n";
+
+$user = array('name' => "Nikita", 'surname' => "Kuldyshev", 'patronymic' => "Andreevich");
+echo $user['name'], " ", $user['surname'], " ", $user['patronymic'], "\n";
+
+$date = array('year'=> 2024, 'month' => "03", 'day' => "08");
+echo $date['year'], "-", $date['month'], "-", $date['day'], "\n";
+
+$arr = array('a','b','c','d','e');
+echo sizeof($arr), "\n";
+
+$len = count($arr);
+echo $arr[$len-1], "\n";
+echo $arr[$len-2], "\n";
+
