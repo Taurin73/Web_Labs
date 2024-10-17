@@ -261,3 +261,11 @@ if(sizeof($arr) == 3) {
     echo "Array has 3 elements inside. Sum is ", array_sum($arr), "\n";
 }
 else echo "Array has ", sizeof($arr), "elements";
+
+// Task 11 (19?)
+$pyramidSize = 20;
+echo "\n";
+for($i = 1; $i <= $pyramidSize; $i++) {
+    for($j = 1; $j <= $i; $j++) echo 'x';
+    echo "\n";
+}
