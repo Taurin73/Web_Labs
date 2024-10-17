@@ -109,3 +109,11 @@ for($i = 0; $i <= sizeof($array); $i++) {
          break;
     }
 }
+
+// Task 7 (15?)
+function printStringReturnNumber() {
+    echo "Your number is: ";
+    return 1;
+}
+$my_num = printStringReturnNumber();
+echo $my_num;
