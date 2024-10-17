@@ -255,3 +255,9 @@ else {
 }
 
 $arr = [32, 321, 453];
+
+if(sizeof($arr) == 3) {
+    $sum = array_sum($arr);
+    echo "Array has 3 elements inside. Sum is ", array_sum($arr), "\n";
+}
+else echo "Array has ", sizeof($arr), "elements";
