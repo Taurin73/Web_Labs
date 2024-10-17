@@ -223,3 +223,33 @@ $len = count($arr);
 echo $arr[$len-1], "\n";
 echo $arr[$len-2], "\n";
 
+// Task 10 (18?)
+function sumGreaterThanTen(int $a, int $b){
+    if (($a + $b) > 10){
+        return True;
+    }
+    else{
+        return False;
+    }
+}
+echo sumGreaterThanTen(20, 45), "\n";
+
+function areEqual(int $a, int $b){
+    if($a == $b) return True;
+    else return False;
+}
+echo areEqual(2, 3), "\n";
+
+$test = 0;
+echo ($test == 0) ? "Верно\n" : "";
+
+$age = 21;
+if($age < 10 || $age > 99) echo "$age is out of bounds (10-99)\n";
+else {
+    $sum = array_sum(str_split($age));
+    if ($sum <= 9) {
+        echo "Sum has one digit: $sum\n";
+    } else {
+        echo "Sum has two digits: $sum\n";
+    }
+}
