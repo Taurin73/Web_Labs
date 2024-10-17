@@ -294,3 +294,6 @@ $pairs = str_split($string, 2);
 $arr = array_map("intval",$pairs);
 $sum = array_sum($arr);
 echo "The sum is $sum\n";
+
+// Don't change the line below
+echo "\nYour order is: $very_bad_unclear_name.";
