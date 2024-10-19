@@ -1,0 +1,11 @@
+{
+    "name": "ilya/code",
+    "autoload": {
+        "psr-4": {
+            "Ilya\\Code\\": "src/"
+        }
+    },
+    "require": {
+        "google/apiclient": "^2.18"
+    }
+}
